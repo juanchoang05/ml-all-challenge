@@ -1,0 +1,145 @@
+version: '3.8'
+
+services:
+  # Frontend - ML Item Product (React + Vite)
+  ml-item-product:
+    build:
+      context: ./ml_item_product
+      dockerfile: Dockerfile
+      args:
+        REACT_APP_ENV: ${REACT_APP_ENV:-production}
+        REACT_APP_REGION: ${REACT_APP_REGION:-colombia}
+        REACT_APP_USE_MOCK_DATA: ${REACT_APP_USE_MOCK_DATA:-false}
+    container_name: ml-item-product-app
+    ports:
+      - "3000:80"  # Frontend en puerto 3000
+    environment:
+      - REACT_APP_ENV=${REACT_APP_ENV:-production}
+      - REACT_APP_REGION=${REACT_APP_REGION:-colombia}
+      - REACT_APP_USE_MOCK_DATA=${REACT_APP_USE_MOCK_DATA:-false}
+      - REACT_APP_API_URL=http://ml-core-platform:8080  # URL del backend
+    restart: unless-stopped
+    networks:
+      - ml-network
+    healthcheck:
+      test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost/"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    depends_on:
+      - ml-core-platform
+
+  # Backend - ML Core Platform (Spring Boot)
+  ml-core-platform:
+    build:
+      context: ./ml-core-platform
+      dockerfile: Dockerfile
+    container_name: ml-core-platform-app
+    ports:
+      - "8080:8080"  # Backend en puerto 8080
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+      - SERVER_PORT=8080
+      - JAVA_OPTS=-Xmx512m -Xms256m
+      - DATABASE_URL=jdbc:postgresql://ml-database:5432/mlcoreplatform
+      - DATABASE_USERNAME=mluser
+      - DATABASE_PASSWORD=mlpassword
+      - REDIS_URL=redis://ml-redis:6379
+    volumes:
+      - app-logs:/app/logs
+    networks:
+      - ml-network
+    depends_on:
+      ml-database:
+        condition: service_healthy
+      ml-redis:
+        condition: service_healthy
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/actuator/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 60s
+
+  # Base de datos PostgreSQL
+  ml-database:
+    image: postgres:15-alpine
+    container_name: ml-core-platform-db
+    environment:
+      - POSTGRES_DB=mlcoreplatform
+      - POSTGRES_USER=mluser
+      - POSTGRES_PASSWORD=mlpassword
+      - POSTGRES_INITDB_ARGS=--encoding=UTF-8 --lc-collate=C --lc-ctype=C
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+      - ./ml-core-platform/scripts/init-db.sql:/docker-entrypoint-initdb.d/init-db.sql:ro
+    networks:
+      - ml-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U mluser -d mlcoreplatform"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # Redis para cache
+  ml-redis:
+    image: redis:7-alpine
+    container_name: ml-core-platform-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis-data:/data
+    networks:
+      - ml-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    command: redis-server --appendonly yes --maxmemory 256mb --maxmemory-policy allkeys-lru
+
+  # Nginx como reverse proxy (opcional)
+  nginx-proxy:
+    image: nginx:alpine
+    container_name: ml-nginx-proxy
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx-proxy.conf:/etc/nginx/nginx.conf:ro
+      - ./ssl:/etc/nginx/ssl:ro
+    networks:
+      - ml-network
+    depends_on:
+      - ml-item-product
+      - ml-core-platform
+    restart: unless-stopped
+    profiles:
+      - proxy
+
+volumes:
+  postgres-data:
+    driver: local
+    name: ml_postgres_data
+  redis-data:
+    driver: local
+    name: ml_redis_data
+  app-logs:
+    driver: local
+    name: ml_app_logs
+
+networks:
+  ml-network:
+    driver: bridge
+    name: ml_network
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.20.0.0/16
+          gateway: 172.20.0.1

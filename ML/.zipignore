@@ -1,0 +1,33 @@
+# Archivos y carpetas excluidas del ZIP
+
+## Archivos de compilación y build
+ml-core-platform/target/
+ml_item_product/node_modules/
+ml_item_product/dist/
+
+## Archivos temporales y de sistema
+**/.DS_Store
+**/*.log
+**/.env
+**/tmp/
+**/temp/
+
+## Archivos de configuración del IDE
+**/.vscode/
+**/.idea/
+**/.mvn/
+**/.vite/
+
+## Archivos de caché
+**/__pycache__/
+**/node_modules/
+**/.cache/
+
+## Archivos de Git (opcional)
+**/.git/
+**/.gitignore
+
+## Archivos específicos de desarrollo
+**/coverage/
+**/test-results/
+**/.nyc_output/

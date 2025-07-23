@@ -1,0 +1,179 @@
+{
+  "MCO123456789": {
+    "item_id": "MCO123456789",
+    "rating_average": 4.7,
+    "total_reviews": 47,
+    "reviews": [
+      {
+        "id": "rev_001",
+        "rating": 5,
+        "title": "Excelente producto, llegó muy rápido",
+        "content": "El iPhone funciona perfecto, la batería dura todo el día y la cámara es increíble. El vendedor muy responsable y el envío súper rápido. Totalmente recomendado.",
+        "date_created": "2024-01-20T10:30:00.000Z",
+        "reviewer": {
+          "id": "user_001",
+          "nickname": "CarlosM_2023",
+          "level_id": "gold"
+        },
+        "likes": 12,
+        "dislikes": 0,
+        "helpful_count": 8,
+        "images": [
+          {
+            "id": "img_001",
+            "url": "https://http2.mlstatic.com/reviews/iphone-review-001.jpg",
+            "size": "800x600"
+          }
+        ],
+        "valorization": "POSITIVE",
+        "status": "ACTIVE"
+      },
+      {
+        "id": "rev_002",
+        "rating": 4,
+        "title": "Buen producto, pero tardó un poco en llegar",
+        "content": "El iPhone está en perfectas condiciones y funciona bien. La única queja es que el envío se demoró más de lo esperado, pero el producto vale la pena.",
+        "date_created": "2024-01-18T15:45:00.000Z",
+        "reviewer": {
+          "id": "user_002",
+          "nickname": "MariaL_85",
+          "level_id": "silver"
+        },
+        "likes": 8,
+        "dislikes": 1,
+        "helpful_count": 5,
+        "images": [],
+        "valorization": "POSITIVE",
+        "status": "ACTIVE"
+      },
+      {
+        "id": "rev_003",
+        "rating": 5,
+        "title": "¡Increíble! Mejor de lo que esperaba",
+        "content": "Compré este iPhone para mi esposa y está encantada. La calidad de la pantalla y las fotos es espectacular. Llegó en tiempo récord y bien empacado.",
+        "date_created": "2024-01-22T09:15:00.000Z",
+        "reviewer": {
+          "id": "user_003",
+          "nickname": "JuanP_2024",
+          "level_id": "bronze"
+        },
+        "likes": 15,
+        "dislikes": 0,
+        "helpful_count": 10,
+        "images": [
+          {
+            "id": "img_002",
+            "url": "https://http2.mlstatic.com/reviews/iphone-review-002.jpg",
+            "size": "800x600"
+          },
+          {
+            "id": "img_003",
+            "url": "https://http2.mlstatic.com/reviews/iphone-review-003.jpg",
+            "size": "800x600"
+          }
+        ],
+        "valorization": "POSITIVE",
+        "status": "ACTIVE"
+      },
+      {
+        "id": "rev_004",
+        "rating": 3,
+        "title": "Producto ok, servicio mejorable",
+        "content": "El iPhone funciona bien, sin problemas hasta ahora. Sin embargo, tuve que contactar al vendedor varias veces para resolver dudas sobre la garantía.",
+        "date_created": "2024-01-16T12:30:00.000Z",
+        "reviewer": {
+          "id": "user_004",
+          "nickname": "AndresR_90",
+          "level_id": "gold"
+        },
+        "likes": 3,
+        "dislikes": 2,
+        "helpful_count": 2,
+        "images": [],
+        "valorization": "NEUTRAL",
+        "status": "ACTIVE"
+      },
+      {
+        "id": "rev_005",
+        "rating": 5,
+        "title": "Perfecto para trabajo y entretenimiento",
+        "content": "Lo uso para trabajo y la batería aguanta todo el día sin problemas. Las videoconferencias se ven muy bien y el rendimiento es excelente para todas las apps.",
+        "date_created": "2024-01-24T16:20:00.000Z",
+        "reviewer": {
+          "id": "user_005",
+          "nickname": "LauraCast",
+          "level_id": "platinum"
+        },
+        "likes": 9,
+        "dislikes": 0,
+        "helpful_count": 7,
+        "images": [],
+        "valorization": "POSITIVE",
+        "status": "ACTIVE"
+      }
+    ],
+    "rating_levels": {
+      "five_star": 32,
+      "four_star": 8,
+      "three_star": 4,
+      "two_star": 2,
+      "one_star": 1
+    }
+  },
+  "MCO987654321": {
+    "item_id": "MCO987654321",
+    "rating_average": 4.5,
+    "total_reviews": 28,
+    "reviews": [
+      {
+        "id": "rev_101",
+        "rating": 5,
+        "title": "Excelente Samsung, muy recomendado",
+        "content": "El Galaxy S23 Ultra es increíble. La cámara de 200MP toma fotos espectaculares y el S Pen es muy útil para tomar notas.",
+        "date_created": "2024-01-19T11:45:00.000Z",
+        "reviewer": {
+          "id": "user_101",
+          "nickname": "TechLover23",
+          "level_id": "gold"
+        },
+        "likes": 14,
+        "dislikes": 0,
+        "helpful_count": 9,
+        "images": [
+          {
+            "id": "img_101",
+            "url": "https://http2.mlstatic.com/reviews/samsung-review-001.jpg",
+            "size": "800x600"
+          }
+        ],
+        "valorization": "POSITIVE",
+        "status": "ACTIVE"
+      },
+      {
+        "id": "rev_102",
+        "rating": 4,
+        "title": "Buen teléfono, batería duradera",
+        "content": "Me gusta mucho la duración de la batería y la calidad de la pantalla. Es un poco grande para mis manos pero se acostumbra uno.",
+        "date_created": "2024-01-17T14:30:00.000Z",
+        "reviewer": {
+          "id": "user_102",
+          "nickname": "CamilaV_2023",
+          "level_id": "silver"
+        },
+        "likes": 6,
+        "dislikes": 1,
+        "helpful_count": 4,
+        "images": [],
+        "valorization": "POSITIVE",
+        "status": "ACTIVE"
+      }
+    ],
+    "rating_levels": {
+      "five_star": 18,
+      "four_star": 6,
+      "three_star": 3,
+      "two_star": 1,
+      "one_star": 0
+    }
+  }
+}

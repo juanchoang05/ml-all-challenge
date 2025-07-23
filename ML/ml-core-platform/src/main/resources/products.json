@@ -1,0 +1,212 @@
+{
+  "MCO123456789": {
+    "id": "MCO123456789",
+    "site_id": "MCO",
+    "title": "iPhone 14 Pro Max 256GB Morado Profundo",
+    "subtitle": null,
+    "seller_id": 123456,
+    "category_id": "MCO1055",
+    "official_store_id": null,
+    "price": 4899000,
+    "base_price": 5299000,
+    "original_price": null,
+    "currency_id": "COP",
+    "initial_quantity": 100,
+    "available_quantity": 45,
+    "sold_quantity": 234,
+    "condition": "new",
+    "permalink": "https://articulo.mercadolibre.com.co/MCO-123456789-iphone-14-pro-max-256gb-morado-profundo",
+    "thumbnail": "https://http2.mlstatic.com/D_Q_NP_123456-MCO12345678-preview.jpg",
+    "secure_thumbnail": "https://http2.mlstatic.com/D_Q_NP_123456-MCO12345678-preview.jpg",
+    "pictures": [
+      {
+        "id": "123456",
+        "url": "https://http2.mlstatic.com/D_Q_NP_123456-MCO12345678.jpg",
+        "secure_url": "https://http2.mlstatic.com/D_Q_NP_123456-MCO12345678.jpg",
+        "size": "500x500",
+        "max_size": "1200x1200"
+      },
+      {
+        "id": "123457",
+        "url": "https://http2.mlstatic.com/D_Q_NP_123457-MCO12345678.jpg",
+        "secure_url": "https://http2.mlstatic.com/D_Q_NP_123457-MCO12345678.jpg",
+        "size": "500x500",
+        "max_size": "1200x1200"
+      }
+    ],
+    "video_id": null,
+    "descriptions": [
+      {
+        "id": "MCO123456789-desc",
+        "text": "iPhone 14 Pro Max con la tecnología más avanzada de Apple. Pantalla Super Retina XDR de 6.7 pulgadas, chip A16 Bionic, sistema de cámaras Pro con teleobjetivo 3x y funciones cinematográficas."
+      }
+    ],
+    "accepts_mercadopago": true,
+    "non_mercado_pago_payment_methods": [],
+    "shipping": {
+      "mode": "me2",
+      "methods": [
+        {
+          "id": "mercadoenvios_flex",
+          "name": "Mercado Envíos Flex"
+        }
+      ],
+      "tags": ["self_service_in", "mandatory_free_shipping"],
+      "dimensions": null,
+      "local_pick_up": false,
+      "free_shipping": true,
+      "logistic_type": "fulfillment",
+      "store_pick_up": false
+    },
+    "seller_address": {
+      "city": {
+        "id": "TUxCUENVQjAxMmE3Mw",
+        "name": "Bogotá"
+      },
+      "state": {
+        "id": "TUxCUENPTGw3M2E1",
+        "name": "Distrito Capital"
+      },
+      "country": {
+        "id": "CO",
+        "name": "Colombia"
+      },
+      "search_location": {
+        "neighborhood": {
+          "id": "TUxCTkJPR2ExNzQ1",
+          "name": "Chapinero"
+        },
+        "city": {
+          "id": "TUxCUENVQjAxMmE3Mw",
+          "name": "Bogotá"
+        },
+        "state": {
+          "id": "TUxCUENPTGw3M2E1",
+          "name": "Distrito Capital"
+        }
+      },
+      "id": 123456789
+    },
+    "attributes": [
+      {
+        "id": "BRAND",
+        "name": "Marca",
+        "value_id": "9344",
+        "value_name": "Apple",
+        "value_struct": null,
+        "values": [
+          {
+            "id": "9344",
+            "name": "Apple",
+            "struct": null
+          }
+        ],
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros"
+      },
+      {
+        "id": "MODEL",
+        "name": "Modelo",
+        "value_id": null,
+        "value_name": "iPhone 14 Pro Max",
+        "value_struct": null,
+        "values": [
+          {
+            "id": null,
+            "name": "iPhone 14 Pro Max",
+            "struct": null
+          }
+        ],
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros"
+      }
+    ],
+    "warnings": [],
+    "listing_source": "",
+    "variations": [],
+    "status": "active",
+    "warranty": "12 meses de garantía de fábrica",
+    "catalog_product_id": "MCO15302074",
+    "domain_id": "MCO-CELLPHONES",
+    "seller_contact": null,
+    "location": {},
+    "geolocation": {
+      "latitude": 4.60971,
+      "longitude": -74.08175
+    },
+    "seller_custom_field": null,
+    "parent_item_id": null,
+    "differential_pricing": null,
+    "deal_ids": [],
+    "automatic_relist": false,
+    "date_created": "2024-01-15T10:30:00.000Z",
+    "last_updated": "2024-01-24T16:45:00.000Z"
+  },
+  "MCO987654321": {
+    "id": "MCO987654321",
+    "site_id": "MCO",
+    "title": "Samsung Galaxy S23 Ultra 256GB Negro",
+    "subtitle": null,
+    "seller_id": 789012,
+    "category_id": "MCO1055",
+    "official_store_id": 1234,
+    "price": 3299000,
+    "base_price": 3599000,
+    "original_price": null,
+    "currency_id": "COP",
+    "initial_quantity": 75,
+    "available_quantity": 23,
+    "sold_quantity": 156,
+    "condition": "new",
+    "permalink": "https://articulo.mercadolibre.com.co/MCO-987654321-samsung-galaxy-s23-ultra-256gb-negro",
+    "thumbnail": "https://http2.mlstatic.com/D_Q_NP_987654-MCO87654321-preview.jpg",
+    "secure_thumbnail": "https://http2.mlstatic.com/D_Q_NP_987654-MCO87654321-preview.jpg",
+    "pictures": [
+      {
+        "id": "987654",
+        "url": "https://http2.mlstatic.com/D_Q_NP_987654-MCO87654321.jpg",
+        "secure_url": "https://http2.mlstatic.com/D_Q_NP_987654-MCO87654321.jpg",
+        "size": "500x500",
+        "max_size": "1200x1200"
+      }
+    ],
+    "video_id": null,
+    "descriptions": [
+      {
+        "id": "MCO987654321-desc",
+        "text": "Samsung Galaxy S23 Ultra con S Pen integrado, cámara de 200MP y pantalla Dynamic AMOLED 2X de 6.8 pulgadas."
+      }
+    ],
+    "accepts_mercadopago": true,
+    "non_mercado_pago_payment_methods": [],
+    "shipping": {
+      "mode": "me2",
+      "methods": [
+        {
+          "id": "mercadoenvios_flex",
+          "name": "Mercado Envíos Flex"
+        }
+      ],
+      "tags": ["self_service_in", "mandatory_free_shipping"],
+      "dimensions": null,
+      "local_pick_up": false,
+      "free_shipping": true,
+      "logistic_type": "fulfillment",
+      "store_pick_up": false
+    },
+    "attributes": [
+      {
+        "id": "BRAND",
+        "name": "Marca",
+        "value_id": "5678",
+        "value_name": "Samsung",
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros"
+      }
+    ],
+    "status": "active",
+    "warranty": "12 meses de garantía de fábrica",
+    "date_created": "2024-01-10T08:15:00.000Z",
+    "last_updated": "2024-01-23T12:30:00.000Z"
+  }
+}

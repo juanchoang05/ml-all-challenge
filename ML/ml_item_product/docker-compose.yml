@@ -1,0 +1,54 @@
+version: '3.8'
+
+services:
+  # Aplicación principal
+  ml-product-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        REACT_APP_ENV: ${REACT_APP_ENV:-production}
+        REACT_APP_REGION: ${REACT_APP_REGION:-colombia}
+        REACT_APP_USE_MOCK_DATA: ${REACT_APP_USE_MOCK_DATA:-false}
+    container_name: ml-product-app
+    ports:
+      - "8080:80"
+    environment:
+      - REACT_APP_ENV=${REACT_APP_ENV:-production}
+      - REACT_APP_REGION=${REACT_APP_REGION:-colombia}
+      - REACT_APP_USE_MOCK_DATA=${REACT_APP_USE_MOCK_DATA:-false}
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    networks:
+      - ml-network
+
+  # Nginx para load balancing (opcional)
+  nginx-lb:
+    image: nginx:alpine
+    container_name: ml-nginx-lb
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx-lb.conf:/etc/nginx/nginx.conf:ro
+      - ./ssl:/etc/nginx/ssl:ro
+    depends_on:
+      - ml-product-app
+    restart: unless-stopped
+    networks:
+      - ml-network
+    profiles:
+      - load-balancer
+
+networks:
+  ml-network:
+    driver: bridge
+
+volumes:
+  ml-data:
+    driver: local

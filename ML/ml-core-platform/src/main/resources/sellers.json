@@ -1,0 +1,212 @@
+{
+  "123456": {
+    "id": 123456,
+    "nickname": "TECHSTORE_OFICIAL",
+    "registration_date": "2018-03-15T10:30:00.000Z",
+    "first_name": "TechStore",
+    "last_name": "Colombia",
+    "country_id": "CO",
+    "email": "contact@techstore.co",
+    "identification": {
+      "type": "NIT",
+      "number": "900123456-1"
+    },
+    "address": {
+      "city": "Bogotá",
+      "state": "Distrito Capital",
+      "zip_code": "110111"
+    },
+    "phone": {
+      "area_code": "57",
+      "number": "3001234567",
+      "extension": "",
+      "verified": true
+    },
+    "alternative_phone": {
+      "area_code": "",
+      "number": "",
+      "extension": ""
+    },
+    "user_type": "normal",
+    "tags": [
+      "eshop",
+      "credits_profile",
+      "messages_as_seller"
+    ],
+    "logo": null,
+    "points": 100,
+    "site_id": "MCO",
+    "permalink": "https://perfil.mercadolibre.com.co/TECHSTORE_OFICIAL",
+    "seller_reputation": {
+      "power_seller_status": "gold",
+      "level_id": "5_green",
+      "metrics": {
+        "cancellations": {
+          "period": "60 days",
+          "rate": 0.02,
+          "value": 2
+        },
+        "claims": {
+          "period": "60 days",
+          "rate": 0.01,
+          "value": 1
+        },
+        "delayed_handling_time": {
+          "period": "60 days",
+          "rate": 0.03,
+          "value": 3
+        },
+        "sales": {
+          "period": "60 days",
+          "completed": 1245
+        }
+      },
+      "transactions": {
+        "canceled": 24,
+        "completed": 12456,
+        "period": "historic",
+        "ratings": {
+          "negative": 234,
+          "neutral": 567,
+          "positive": 11655
+        },
+        "total": 12480
+      }
+    },
+    "buyer_reputation": {
+      "canceled_transactions": 0,
+      "tags": [],
+      "transactions": {
+        "canceled": {
+          "paid": 0,
+          "total": 0
+        },
+        "completed": 45,
+        "not_yet_rated": {
+          "paid": 0,
+          "total": 0,
+          "units": 0
+        },
+        "period": "historic",
+        "total": 45,
+        "unrated": {
+          "paid": 0,
+          "total": 0
+        }
+      }
+    },
+    "status": {
+      "site_status": "active",
+      "list": {
+        "allow": true,
+        "codes": [],
+        "immediate_payment": {
+          "reasons": [],
+          "required": false
+        }
+      },
+      "buy": {
+        "allow": true,
+        "codes": [],
+        "immediate_payment": {
+          "reasons": [],
+          "required": false
+        }
+      },
+      "sell": {
+        "allow": true,
+        "codes": [],
+        "immediate_payment": {
+          "reasons": [],
+          "required": false
+        }
+      },
+      "billing": {
+        "allow": true,
+        "codes": []
+      },
+      "mercadoenvios": "active",
+      "mercadopago_tc_accepted": true,
+      "mercadopago_account_type": "personal",
+      "immediate_payment": false
+    }
+  },
+  "789012": {
+    "id": 789012,
+    "nickname": "SAMSUNG_STORE_CO",
+    "registration_date": "2019-08-22T14:15:00.000Z",
+    "first_name": "Samsung",
+    "last_name": "Store Colombia",
+    "country_id": "CO",
+    "email": "tienda@samsung.co",
+    "identification": {
+      "type": "NIT",
+      "number": "900789012-3"
+    },
+    "address": {
+      "city": "Medellín",
+      "state": "Antioquia",
+      "zip_code": "050001"
+    },
+    "phone": {
+      "area_code": "57",
+      "number": "3012345678",
+      "extension": "",
+      "verified": true
+    },
+    "user_type": "normal",
+    "tags": [
+      "eshop",
+      "credits_profile",
+      "messages_as_seller",
+      "brand_verified"
+    ],
+    "logo": "https://http2.mlstatic.com/D_Q_NP_samsung-logo.jpg",
+    "points": 100,
+    "site_id": "MCO",
+    "permalink": "https://perfil.mercadolibre.com.co/SAMSUNG_STORE_CO",
+    "seller_reputation": {
+      "power_seller_status": "platinum",
+      "level_id": "5_green",
+      "metrics": {
+        "cancellations": {
+          "period": "60 days",
+          "rate": 0.01,
+          "value": 1
+        },
+        "claims": {
+          "period": "60 days",
+          "rate": 0.005,
+          "value": 0
+        },
+        "delayed_handling_time": {
+          "period": "60 days",
+          "rate": 0.02,
+          "value": 2
+        },
+        "sales": {
+          "period": "60 days",
+          "completed": 2876
+        }
+      },
+      "transactions": {
+        "canceled": 45,
+        "completed": 28760,
+        "period": "historic",
+        "ratings": {
+          "negative": 287,
+          "neutral": 863,
+          "positive": 27610
+        },
+        "total": 28805
+      }
+    },
+    "status": {
+      "site_status": "active",
+      "mercadoenvios": "active",
+      "mercadopago_tc_accepted": true,
+      "mercadopago_account_type": "business",
+      "immediate_payment": false
+    }
+  }
+}

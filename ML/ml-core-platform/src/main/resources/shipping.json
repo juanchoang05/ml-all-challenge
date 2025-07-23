@@ -1,0 +1,243 @@
+{
+  "MCO123456789": [
+    {
+      "id": "mercadoenvios_flex",
+      "name": "Mercado Envíos Flex",
+      "display_name": "Llega mañana",
+      "currency_id": "COP",
+      "list_cost": 0,
+      "cost": 0,
+      "free_shipping": {
+        "flag": true,
+        "rule": {
+          "free_mode": "minimum_price",
+          "value": 70000
+        }
+      },
+      "tracks_shipments_status": "ACTIVE",
+      "estimated_schedule_limit": {
+        "date": "2024-01-25T18:00:00.000Z"
+      },
+      "estimated_delivery": {
+        "date": "2024-01-26T18:00:00.000Z",
+        "unit": "business_days",
+        "offset": {
+          "date": 1,
+          "shipping": 1
+        }
+      },
+      "speed_ranking": 1,
+      "delivery_type": "normal",
+      "shipping_method_id": 73328,
+      "coverage": {
+        "all_country": true,
+        "specific_places": {
+          "included": [],
+          "excluded": []
+        }
+      },
+      "company": {
+        "id": "mercadoenvios",
+        "name": "Mercado Envíos",
+        "logo": "https://http2.mlstatic.com/shipping/carriers/mercadoenvios.png"
+      },
+      "handling_time": {
+        "exclude_weekends": true,
+        "unit": "hours",
+        "value": 24
+      }
+    },
+    {
+      "id": "mercadoenvios_normal",
+      "name": "Mercado Envíos Normal",
+      "display_name": "Llega en 2-4 días",
+      "currency_id": "COP",
+      "list_cost": 0,
+      "cost": 0,
+      "free_shipping": {
+        "flag": true,
+        "rule": {
+          "free_mode": "minimum_price",
+          "value": 70000
+        }
+      },
+      "tracks_shipments_status": "ACTIVE",
+      "estimated_schedule_limit": {
+        "date": "2024-01-26T18:00:00.000Z"
+      },
+      "estimated_delivery": {
+        "date": "2024-01-29T18:00:00.000Z",
+        "unit": "business_days",
+        "offset": {
+          "date": 3,
+          "shipping": 2
+        }
+      },
+      "speed_ranking": 2,
+      "delivery_type": "normal",
+      "shipping_method_id": 73329,
+      "coverage": {
+        "all_country": true,
+        "specific_places": {
+          "included": [],
+          "excluded": []
+        }
+      },
+      "company": {
+        "id": "mercadoenvios",
+        "name": "Mercado Envíos",
+        "logo": "https://http2.mlstatic.com/shipping/carriers/mercadoenvios.png"
+      },
+      "handling_time": {
+        "exclude_weekends": true,
+        "unit": "hours",
+        "value": 48
+      }
+    },
+    {
+      "id": "pickup_point",
+      "name": "Recoger en punto",
+      "display_name": "Recoger en punto cercano",
+      "currency_id": "COP",
+      "list_cost": 0,
+      "cost": 0,
+      "free_shipping": {
+        "flag": true,
+        "rule": {
+          "free_mode": "minimum_price",
+          "value": 50000
+        }
+      },
+      "tracks_shipments_status": "ACTIVE",
+      "estimated_schedule_limit": {
+        "date": "2024-01-25T18:00:00.000Z"
+      },
+      "estimated_delivery": {
+        "date": "2024-01-27T18:00:00.000Z",
+        "unit": "business_days",
+        "offset": {
+          "date": 2,
+          "shipping": 1
+        }
+      },
+      "speed_ranking": 3,
+      "delivery_type": "pickup",
+      "shipping_method_id": 73330,
+      "coverage": {
+        "all_country": false,
+        "specific_places": {
+          "included": [
+            "Bogotá",
+            "Medellín",
+            "Cali",
+            "Barranquilla",
+            "Cartagena"
+          ],
+          "excluded": []
+        }
+      },
+      "company": {
+        "id": "mercadoenvios",
+        "name": "Mercado Envíos",
+        "logo": "https://http2.mlstatic.com/shipping/carriers/mercadoenvios.png"
+      },
+      "handling_time": {
+        "exclude_weekends": true,
+        "unit": "hours",
+        "value": 24
+      },
+      "pickup_points": [
+        {
+          "id": "PP001",
+          "name": "Almacén Éxito Portal 80",
+          "address": "Av. Boyacá #80-94",
+          "city": "Bogotá",
+          "state": "Distrito Capital",
+          "zip_code": "111071",
+          "phone": "3001112233",
+          "hours": "L-V: 8:00-20:00, S: 8:00-19:00, D: 9:00-17:00",
+          "latitude": 4.6825,
+          "longitude": -74.1025
+        },
+        {
+          "id": "PP002",
+          "name": "Droguería Colsubsidio Chapinero",
+          "address": "Carrera 13 #63-45",
+          "city": "Bogotá",
+          "state": "Distrito Capital",
+          "zip_code": "110231",
+          "phone": "3004445566",
+          "hours": "L-S: 7:00-22:00, D: 8:00-20:00",
+          "latitude": 4.6533,
+          "longitude": -74.0654
+        }
+      ]
+    }
+  ],
+  "MCO987654321": [
+    {
+      "id": "mercadoenvios_flex",
+      "name": "Mercado Envíos Flex",
+      "display_name": "Llega mañana",
+      "currency_id": "COP",
+      "list_cost": 0,
+      "cost": 0,
+      "free_shipping": {
+        "flag": true,
+        "rule": {
+          "free_mode": "minimum_price",
+          "value": 70000
+        }
+      },
+      "tracks_shipments_status": "ACTIVE",
+      "estimated_delivery": {
+        "date": "2024-01-26T18:00:00.000Z",
+        "unit": "business_days",
+        "offset": {
+          "date": 1,
+          "shipping": 1
+        }
+      },
+      "speed_ranking": 1,
+      "delivery_type": "normal",
+      "shipping_method_id": 73328,
+      "company": {
+        "id": "mercadoenvios",
+        "name": "Mercado Envíos",
+        "logo": "https://http2.mlstatic.com/shipping/carriers/mercadoenvios.png"
+      }
+    },
+    {
+      "id": "mercadoenvios_normal",
+      "name": "Mercado Envíos Normal",
+      "display_name": "Llega en 2-4 días",
+      "currency_id": "COP",
+      "list_cost": 0,
+      "cost": 0,
+      "free_shipping": {
+        "flag": true,
+        "rule": {
+          "free_mode": "minimum_price",
+          "value": 70000
+        }
+      },
+      "tracks_shipments_status": "ACTIVE",
+      "estimated_delivery": {
+        "date": "2024-01-29T18:00:00.000Z",
+        "unit": "business_days",
+        "offset": {
+          "date": 3,
+          "shipping": 2
+        }
+      },
+      "speed_ranking": 2,
+      "delivery_type": "normal",
+      "shipping_method_id": 73329,
+      "company": {
+        "id": "mercadoenvios",
+        "name": "Mercado Envíos",
+        "logo": "https://http2.mlstatic.com/shipping/carriers/mercadoenvios.png"
+      }
+    }
+  ]
+}

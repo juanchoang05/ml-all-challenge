@@ -1,0 +1,162 @@
+{
+  "MCO123456789": [
+    {
+      "id": 12345001,
+      "text": "¿El iPhone viene con cargador incluido?",
+      "status": "ANSWERED",
+      "date_created": "2024-01-18T10:30:00.000Z",
+      "item_id": "MCO123456789",
+      "seller_id": 123456,
+      "from": {
+        "id": 555666777,
+        "answered_questions": 45
+      },
+      "answer": {
+        "text": "Sí, el iPhone 14 Pro Max viene con cable USB-C a Lightning y adaptador de corriente de 20W incluidos en la caja.",
+        "status": "ACTIVE",
+        "date_created": "2024-01-18T14:22:00.000Z"
+      },
+      "deleted_from_listing": false,
+      "hold": false,
+      "tags": []
+    },
+    {
+      "id": 12345002,
+      "text": "¿Cuánto tiempo de garantía tiene?",
+      "status": "ANSWERED",
+      "date_created": "2024-01-19T09:15:00.000Z",
+      "item_id": "MCO123456789",
+      "seller_id": 123456,
+      "from": {
+        "id": 555666778,
+        "answered_questions": 23
+      },
+      "answer": {
+        "text": "El iPhone 14 Pro Max tiene garantía oficial de Apple por 12 meses. Además, ofrecemos soporte técnico adicional de nuestra tienda.",
+        "status": "ACTIVE",
+        "date_created": "2024-01-19T11:45:00.000Z"
+      },
+      "deleted_from_listing": false,
+      "hold": false,
+      "tags": []
+    },
+    {
+      "id": 12345003,
+      "text": "¿Es libre para todas las operadoras?",
+      "status": "ANSWERED",
+      "date_created": "2024-01-20T16:30:00.000Z",
+      "item_id": "MCO123456789",
+      "seller_id": 123456,
+      "from": {
+        "id": 555666779,
+        "answered_questions": 67
+      },
+      "answer": {
+        "text": "Sí, es completamente libre. Funciona con Claro, Movistar, Tigo, Avantel y cualquier operadora en Colombia y el mundo.",
+        "status": "ACTIVE",
+        "date_created": "2024-01-20T18:15:00.000Z"
+      },
+      "deleted_from_listing": false,
+      "hold": false,
+      "tags": []
+    },
+    {
+      "id": 12345004,
+      "text": "¿Tienen tienda física para ver el producto?",
+      "status": "ANSWERED",
+      "date_created": "2024-01-21T12:00:00.000Z",
+      "item_id": "MCO123456789",
+      "seller_id": 123456,
+      "from": {
+        "id": 555666780,
+        "answered_questions": 12
+      },
+      "answer": {
+        "text": "Sí, tenemos tienda física en el Centro Comercial Andino, Local 234, Bogotá. Horario: Lunes a Sábado 10am-8pm, Domingos 11am-7pm.",
+        "status": "ACTIVE",
+        "date_created": "2024-01-21T14:30:00.000Z"
+      },
+      "deleted_from_listing": false,
+      "hold": false,
+      "tags": []
+    },
+    {
+      "id": 12345005,
+      "text": "¿Hacen envío a Medellín?",
+      "status": "ANSWERED",
+      "date_created": "2024-01-22T08:45:00.000Z",
+      "item_id": "MCO123456789",
+      "seller_id": 123456,
+      "from": {
+        "id": 555666781,
+        "answered_questions": 89
+      },
+      "answer": {
+        "text": "Por supuesto! Hacemos envíos a toda Colombia. A Medellín llega en 1-2 días hábiles con Mercado Envíos, sin costo adicional.",
+        "status": "ACTIVE",
+        "date_created": "2024-01-22T10:20:00.000Z"
+      },
+      "deleted_from_listing": false,
+      "hold": false,
+      "tags": []
+    },
+    {
+      "id": 12345006,
+      "text": "¿El color morado se ve igual que en las fotos?",
+      "status": "UNANSWERED",
+      "date_created": "2024-01-24T15:30:00.000Z",
+      "item_id": "MCO123456789",
+      "seller_id": 123456,
+      "from": {
+        "id": 555666782,
+        "answered_questions": 34
+      },
+      "answer": null,
+      "deleted_from_listing": false,
+      "hold": false,
+      "tags": []
+    }
+  ],
+  "MCO987654321": [
+    {
+      "id": 12345101,
+      "text": "¿El S Pen viene incluido?",
+      "status": "ANSWERED",
+      "date_created": "2024-01-19T11:20:00.000Z",
+      "item_id": "MCO987654321",
+      "seller_id": 789012,
+      "from": {
+        "id": 555666901,
+        "answered_questions": 156
+      },
+      "answer": {
+        "text": "Sí, el S Pen viene integrado en el Galaxy S23 Ultra. Es una de las características principales del dispositivo.",
+        "status": "ACTIVE",
+        "date_created": "2024-01-19T13:45:00.000Z"
+      },
+      "deleted_from_listing": false,
+      "hold": false,
+      "tags": []
+    },
+    {
+      "id": 12345102,
+      "text": "¿Cuántas horas dura la batería?",
+      "status": "ANSWERED",
+      "date_created": "2024-01-20T14:15:00.000Z",
+      "item_id": "MCO987654321",
+      "seller_id": 789012,
+      "from": {
+        "id": 555666902,
+        "answered_questions": 78
+      },
+      "answer": {
+        "text": "La batería de 5000mAh dura aproximadamente 24-30 horas con uso moderado, y 12-15 horas con uso intensivo.",
+        "status": "ACTIVE",
+        "date_created": "2024-01-20T16:30:00.000Z"
+      },
+      "deleted_from_listing": false,
+      "hold": false,
+      "tags": []
+    }
+  ]
+}

@@ -1,0 +1,173 @@
+{
+  "MCO": [
+    {
+      "id": "credit_card",
+      "name": "Tarjetas de crédito",
+      "payment_type_id": "credit_card",
+      "status": "active",
+      "secure_thumbnail": "https://http2.mlstatic.com/payment-methods/credit-card.png",
+      "thumbnail": "https://http2.mlstatic.com/payment-methods/credit-card.png",
+      "deferred_capture": "supported",
+      "settings": [
+        {
+          "bin": {
+            "pattern": "^4",
+            "installments_pattern": "^4",
+            "exclusion_pattern": null
+          },
+          "card_number": {
+            "validation": "standard",
+            "length": 16
+          },
+          "security_code": {
+            "length": 3,
+            "card_location": "back",
+            "mode": "mandatory"
+          }
+        }
+      ],
+      "additional_info_needed": [
+        "cardholder_name",
+        "cardholder_identification_number"
+      ],
+      "min_allowed_amount": 300,
+      "max_allowed_amount": 25000000,
+      "accreditation_time": 2880,
+      "financial_institutions": [
+        {
+          "id": "1234",
+          "description": "Visa"
+        },
+        {
+          "id": "1235",
+          "description": "Mastercard"
+        },
+        {
+          "id": "1236",
+          "description": "American Express"
+        }
+      ],
+      "processing_modes": [
+        "aggregator",
+        "gateway"
+      ]
+    },
+    {
+      "id": "debit_card",
+      "name": "Tarjetas de débito",
+      "payment_type_id": "debit_card",
+      "status": "active",
+      "secure_thumbnail": "https://http2.mlstatic.com/payment-methods/debit-card.png",
+      "thumbnail": "https://http2.mlstatic.com/payment-methods/debit-card.png",
+      "deferred_capture": "does_not_apply",
+      "settings": [
+        {
+          "bin": {
+            "pattern": "^4",
+            "installments_pattern": "^4",
+            "exclusion_pattern": null
+          },
+          "card_number": {
+            "validation": "standard",
+            "length": 16
+          },
+          "security_code": {
+            "length": 3,
+            "card_location": "back",
+            "mode": "mandatory"
+          }
+        }
+      ],
+      "additional_info_needed": [
+        "cardholder_name",
+        "cardholder_identification_number"
+      ],
+      "min_allowed_amount": 300,
+      "max_allowed_amount": 5000000,
+      "accreditation_time": 0,
+      "financial_institutions": [
+        {
+          "id": "1234",
+          "description": "Visa Débito"
+        },
+        {
+          "id": "1235",
+          "description": "Mastercard Débito"
+        }
+      ],
+      "processing_modes": [
+        "aggregator"
+      ]
+    },
+    {
+      "id": "ticket",
+      "name": "Efectivo",
+      "payment_type_id": "ticket",
+      "status": "active",
+      "secure_thumbnail": "https://http2.mlstatic.com/payment-methods/ticket.png",
+      "thumbnail": "https://http2.mlstatic.com/payment-methods/ticket.png",
+      "deferred_capture": "does_not_apply",
+      "settings": [],
+      "additional_info_needed": [
+        "cardholder_identification_number"
+      ],
+      "min_allowed_amount": 5000,
+      "max_allowed_amount": 8000000,
+      "accreditation_time": 0,
+      "financial_institutions": [
+        {
+          "id": "1237",
+          "description": "Efecty"
+        },
+        {
+          "id": "1238",
+          "description": "Baloto"
+        },
+        {
+          "id": "1239",
+          "description": "Paga Todo"
+        }
+      ],
+      "processing_modes": [
+        "aggregator"
+      ]
+    },
+    {
+      "id": "bank_transfer",
+      "name": "PSE",
+      "payment_type_id": "bank_transfer",
+      "status": "active",
+      "secure_thumbnail": "https://http2.mlstatic.com/payment-methods/pse.png",
+      "thumbnail": "https://http2.mlstatic.com/payment-methods/pse.png",
+      "deferred_capture": "does_not_apply",
+      "settings": [],
+      "additional_info_needed": [
+        "entity_type"
+      ],
+      "min_allowed_amount": 1600,
+      "max_allowed_amount": 340000000,
+      "accreditation_time": 30,
+      "financial_institutions": [
+        {
+          "id": "1040",
+          "description": "Banco de Bogotá"
+        },
+        {
+          "id": "1007",
+          "description": "Bancolombia"
+        },
+        {
+          "id": "1019",
+          "description": "BBVA Colombia"
+        },
+        {
+          "id": "1051",
+          "description": "Davivienda"
+        }
+      ],
+      "processing_modes": [
+        "aggregator"
+      ]
+    }
+  ]
+}

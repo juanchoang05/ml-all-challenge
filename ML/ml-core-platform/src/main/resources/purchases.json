@@ -1,0 +1,274 @@
+{
+  "order_123456": {
+    "id": "order_123456",
+    "date_created": "2024-01-24T14:30:00.000Z",
+    "date_closed": null,
+    "last_updated": "2024-01-24T14:30:00.000Z",
+    "status": "confirmed",
+    "status_detail": {
+      "code": "payment_confirmed",
+      "description": "Pago confirmado, procesando envío"
+    },
+    "currency_id": "COP",
+    "order_items": [
+      {
+        "item": {
+          "id": "MCO123456789",
+          "title": "iPhone 14 Pro Max 256GB Morado Profundo",
+          "category_id": "MCO1055",
+          "variation_id": null,
+          "seller_custom_field": null,
+          "variation_attributes": [],
+          "warranty": "12 meses de garantía de fábrica",
+          "condition": "new",
+          "seller_sku": null,
+          "global_price": null,
+          "net_weight": null
+        },
+        "quantity": 1,
+        "unit_price": 4899000,
+        "full_unit_price": 4899000,
+        "currency_id": "COP",
+        "manufacturing_ending_date": null,
+        "sale_fee": 343930,
+        "listing_type_id": "gold_special"
+      }
+    ],
+    "total_amount": 4899000,
+    "paid_amount": 4899000,
+    "coupon": {
+      "id": null,
+      "amount": 0
+    },
+    "expiration_date": "2024-02-23T14:30:00.000Z",
+    "shipping": {
+      "id": 43567891234,
+      "shipment_type": "shipping",
+      "status": "pending",
+      "date_created": "2024-01-24T14:30:00.000Z",
+      "last_updated": "2024-01-24T14:30:00.000Z",
+      "tracking_number": "ML123456789CO",
+      "tracking_method": "DROP_OFF",
+      "service_id": 512,
+      "carrier_info": {
+        "name": "Mercado Envíos",
+        "logo": "https://http2.mlstatic.com/shipping/carriers/mercadoenvios.png"
+      },
+      "shipping_items": [
+        {
+          "id": "MCO123456789",
+          "description": "iPhone 14 Pro Max 256GB Morado Profundo",
+          "quantity": 1,
+          "dimensions": "16.0x7.8x0.8,190.0"
+        }
+      ],
+      "shipping_option": {
+        "id": 123456789,
+        "name": "Mercado Envíos Flex",
+        "cost": 0,
+        "currency_id": "COP",
+        "estimated_delivery": {
+          "date": "2024-01-26T18:00:00.000Z"
+        }
+      },
+      "receiver_address": {
+        "id": 567891234,
+        "address_line": "Carrera 13 # 85-32 Apto 501",
+        "street_name": "Carrera 13",
+        "street_number": "85-32",
+        "comment": "Apartamento 501, Edificio Torre Norte",
+        "zip_code": "110221",
+        "city": {
+          "id": "TUxCUENVQjAxMmE3Mw",
+          "name": "Bogotá"
+        },
+        "state": {
+          "id": "TUxCUENPTGw3M2E1",
+          "name": "Distrito Capital"
+        },
+        "country": {
+          "id": "CO",
+          "name": "Colombia"
+        },
+        "latitude": 4.6482837,
+        "longitude": -74.0647574,
+        "receiver_name": "Carlos Martinez",
+        "receiver_phone": "3001234567"
+      }
+    },
+    "payments": [
+      {
+        "id": 789123456,
+        "order_id": "order_123456",
+        "payer_id": 98765432,
+        "collector": {
+          "id": 123456
+        },
+        "card_id": null,
+        "site_id": "MCO",
+        "reason": "iPhone 14 Pro Max 256GB Morado Profundo",
+        "payment_method_id": "visa",
+        "payment_type": "credit_card",
+        "status": "approved",
+        "status_detail": "accredited",
+        "currency_id": "COP",
+        "description": null,
+        "installments": 12,
+        "issuer_id": "1234",
+        "total_paid_amount": 4899000,
+        "shipping_cost": 0,
+        "coupon_amount": 0,
+        "date_created": "2024-01-24T14:30:00.000Z",
+        "date_last_updated": "2024-01-24T14:35:00.000Z",
+        "date_approved": "2024-01-24T14:35:00.000Z",
+        "authorization_code": "AUTH123456",
+        "captured": true,
+        "live_mode": false,
+        "operation_type": "regular_payment"
+      }
+    ],
+    "buyer": {
+      "id": 98765432,
+      "nickname": "CarlosM_2023",
+      "email": "carlos.martinez@email.com",
+      "phone": {
+        "area_code": "57",
+        "number": "3001234567"
+      },
+      "first_name": "Carlos",
+      "last_name": "Martinez"
+    },
+    "seller": {
+      "id": 123456,
+      "nickname": "TECHSTORE_OFICIAL",
+      "email": "contact@techstore.co",
+      "phone": {
+        "area_code": "57",
+        "number": "3001234567"
+      },
+      "first_name": "TechStore",
+      "last_name": "Colombia"
+    },
+    "tags": [
+      "paid",
+      "not_delivered"
+    ],
+    "feedback": {
+      "purchase": null,
+      "sale": null
+    },
+    "context": {
+      "channel": "marketplace",
+      "site": "MCO",
+      "flows": [],
+      "application": "123456789"
+    }
+  },
+  "order_789012": {
+    "id": "order_789012",
+    "date_created": "2024-01-22T10:15:00.000Z",
+    "date_closed": "2024-01-23T16:45:00.000Z",
+    "last_updated": "2024-01-23T16:45:00.000Z",
+    "status": "paid",
+    "status_detail": {
+      "code": "delivered",
+      "description": "Producto entregado exitosamente"
+    },
+    "currency_id": "COP",
+    "order_items": [
+      {
+        "item": {
+          "id": "MCO987654321",
+          "title": "Samsung Galaxy S23 Ultra 256GB Negro",
+          "category_id": "MCO1055",
+          "variation_id": null,
+          "seller_custom_field": null,
+          "variation_attributes": [],
+          "warranty": "12 meses de garantía de fábrica",
+          "condition": "new",
+          "seller_sku": null,
+          "global_price": null,
+          "net_weight": null
+        },
+        "quantity": 1,
+        "unit_price": 3299000,
+        "full_unit_price": 3299000,
+        "currency_id": "COP",
+        "manufacturing_ending_date": null,
+        "sale_fee": 230930,
+        "listing_type_id": "gold_special"
+      }
+    ],
+    "total_amount": 3299000,
+    "paid_amount": 3299000,
+    "shipping": {
+      "id": 43567891235,
+      "shipment_type": "shipping",
+      "status": "delivered",
+      "date_created": "2024-01-22T10:15:00.000Z",
+      "last_updated": "2024-01-23T16:45:00.000Z",
+      "tracking_number": "ML987654321CO",
+      "tracking_method": "DROP_OFF",
+      "service_id": 512,
+      "date_first_printed": "2024-01-22T14:30:00.000Z",
+      "carrier_info": {
+        "name": "Mercado Envíos",
+        "logo": "https://http2.mlstatic.com/shipping/carriers/mercadoenvios.png"
+      }
+    },
+    "payments": [
+      {
+        "id": 789123457,
+        "order_id": "order_789012",
+        "payer_id": 98765433,
+        "collector": {
+          "id": 789012
+        },
+        "card_id": null,
+        "site_id": "MCO",
+        "reason": "Samsung Galaxy S23 Ultra 256GB Negro",
+        "payment_method_id": "mastercard",
+        "payment_type": "credit_card",
+        "status": "approved",
+        "status_detail": "accredited",
+        "currency_id": "COP",
+        "installments": 6,
+        "total_paid_amount": 3299000,
+        "date_created": "2024-01-22T10:15:00.000Z",
+        "date_approved": "2024-01-22T10:20:00.000Z",
+        "authorization_code": "AUTH789012",
+        "captured": true,
+        "live_mode": false,
+        "operation_type": "regular_payment"
+      }
+    ],
+    "buyer": {
+      "id": 98765433,
+      "nickname": "MariaL_85",
+      "email": "maria.lopez@email.com",
+      "first_name": "Maria",
+      "last_name": "Lopez"
+    },
+    "seller": {
+      "id": 789012,
+      "nickname": "SAMSUNG_STORE_CO",
+      "email": "tienda@samsung.co",
+      "first_name": "Samsung",
+      "last_name": "Store Colombia"
+    },
+    "tags": [
+      "paid",
+      "delivered"
+    ],
+    "feedback": {
+      "purchase": {
+        "rating": 5,
+        "message": "Excelente producto y servicio"
+      },
+      "sale": {
+        "rating": 5,
+        "message": "Comprador responsable, pago rápido"
+      }
+    }
+  }
+}
